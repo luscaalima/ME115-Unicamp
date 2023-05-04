@@ -99,3 +99,9 @@ print(city_temps)
 # em Celsius.
 city_temps$tempC <- 5*(city_temps$temp - 32)/9
 head(city_temps)
+
+
+library(dslabs)
+data(murders)
+class(murders)
+print(murders)
