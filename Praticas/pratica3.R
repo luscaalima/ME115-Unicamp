@@ -39,3 +39,16 @@ dados_rolando <- function(n){
 return (sum(sample(1:6, size=n, replace=TRUE)))
 }
 
+
+stats <- function(vetor){
+  count = 0
+  total = 0
+  for(i in vetor){
+    total = i + total
+    count = 1 + count
+  }
+  media <- total/count
+  return(media)
+}
+
+stats(c(1:10))
